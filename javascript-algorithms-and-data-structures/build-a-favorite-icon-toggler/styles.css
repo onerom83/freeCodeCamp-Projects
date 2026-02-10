@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+h1 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.item-list {
+  margin: 100px auto;
+  padding: 15px;
+  display: block;
+  width: 120px;
+  text-align: center;
+}
+.item-list li {
+  line-height: 2;
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+.left {
+  text-align: left;
+  width: 80px;
+}
+.right {
+  text-align: right;
+  width: 20px;
+}
+button {
+  cursor: pointer;
+}
+.filled {
+  color: hotpink;
+}
+
+** end of styles.css **
+
+** start of script.js **
+
+const hearts = document.querySelectorAll(".favorite-icon");
+
+hearts.forEach(function(heartEl) {
+  heartEl.addEventListener("click", () => {
+    heartEl.classList.toggle('filled');   
+    heartEl.classList.contains('filled') ? heartEl.innerHTML = "&#10084;" : heartEl.innerHTML = "&#9825;";
+  });
+});
+

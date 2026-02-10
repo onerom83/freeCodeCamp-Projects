@@ -1,0 +1,37 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#get-weather-btn, #select-city {
+  padding: 10px;
+  background: moccasin;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: darkred;
+}
+#container {
+  max-width: 500px;
+  padding: 25px;
+}
+#div-select-city {
+  max-width: 400px;
+  padding: 50px 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+.parts {
+  border: 2px solid darkred;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+#location {
+  text-align: center;
+}
+#main-temperature {
+  font-size: 20px;
+  font-weight: bold;
+}
